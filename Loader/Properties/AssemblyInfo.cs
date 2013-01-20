@@ -10,3 +10,8 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle("SSLoader")]
 [assembly: AssemblyDescription("Script# Script Loader")]
 [assembly: ScriptAssembly("loader")]
+
+[assembly: AssemblyCompany("Erik Källén")]
+[assembly: AssemblyProduct("Saltarelle version of the Script# loader")]
+[assembly: AssemblyCopyright("")]
+[assembly: AssemblyTrademark("")]
