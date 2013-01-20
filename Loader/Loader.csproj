@@ -10,10 +10,10 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>System</RootNamespace>
-    <AssemblyName>SSLoader</AssemblyName>
+    <AssemblyName>Saltarelle.Loader</AssemblyName>
     <NoStdLib>True</NoStdLib>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\ScriptSharp.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\Saltarelle.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
@@ -24,24 +24,24 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\bin\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\..\bin\SSLoader.xml</DocumentationFile>
+    <DocumentationFile>bin\Saltarelle.Loader.xml</DocumentationFile>
     <NoWarn>1591</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\bin\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>1591</NoWarn>
-    <DocumentationFile>..\..\..\bin\SSLoader.xml</DocumentationFile>
+    <DocumentationFile>bin\Saltarelle.Loader.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\Version.cs" />
@@ -52,11 +52,4 @@
       <Link>Properties\ScriptSharp.cs</Link>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CoreLib\CoreLib.csproj">
-      <Project>{36D4B098-A21C-4725-ACD3-400922885F38}</Project>
-      <Name>CoreLib</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="..\..\..\..\bin\Saltarelle.Compiler.targets" />
 </Project>
