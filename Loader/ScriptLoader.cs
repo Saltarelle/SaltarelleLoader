@@ -42,7 +42,6 @@ namespace System {
         /// <param name="context">The object to be passed in into the callback.</param>
         /// <typeparam name="TContext">The type of the context object.</typeparam>
         [ScriptAlias("ss.loadScripts")]
-		[IgnoreGenericArguments]
         public static void LoadScripts<TContext>(string[] scriptNames, Action<TContext> callback, TContext context) {
         }
 
